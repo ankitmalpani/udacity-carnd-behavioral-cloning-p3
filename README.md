@@ -13,13 +13,11 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./sample_images/placeholder.png "Data Visualization"
-[image2]: ./sample_images/placeholder.png "Color Channel image"
-[image3]: ./sample_images/placeholder_small.png "Recovery Image"
-[image4]: ./sample_images/placeholder_small.png "Recovery Image"
-[image5]: ./sample_images/placeholder_small.png "Recovery Image"
-[image6]: ./sample_images/placeholder_small.png "Normal Image"
-[image7]: ./sample_images/placeholder_small.png "Flipped Image"
+[image1]: ./sample_images/centerPlot.png "Center Plot"
+[image2]: ./sample_images/leftPlot.png "Left Plot"
+[image3]: ./sample_images/rightPlot.png "Right Plot"
+[image4]: ./sample_images/image2.png "Color Channel image"
+[image5]: ./sample_images/image1.png "Processed Image"
 
 ### A basic retrospective
 This was one of the toughest and the most interesting projects I have done so far - and I learned it the hard way that excessive data doesn't solve all the problems. It was quite clear over the course of project how bad data can stupendously worsen the results. Some major takeaways for this project for me were:
@@ -39,7 +37,6 @@ Note: Using the Udacity provided simulator and my drive.py file, the car can be 
 ```sh
 python drive.py model.h5
 ```
-
 
 ### Code structure
 * First section that just takes care of all imports
@@ -69,6 +66,10 @@ This is where I spent most of my time for this project. I cannot re-iterate that
 4. Had to learn the hard way that proper data augmentation and randomization will help me solve some of my issues. Thanks to some mentors on the forums who helped out.
 5. Finally added 2 really specific sets for side-to-center recovery and curve driving to Udacity's sample set.
 
+![alt text][image1]
+![alt text][image2]
+![alt text][image3]
+
 ### Data Augmentation and Training strategy
 After some suggestions from mentors on the forums. I took the augmentation and randomization approach. My each generator call does this:
 0. Randomly shuffles the data.
@@ -80,3 +81,6 @@ After some suggestions from mentors on the forums. I took the augmentation and r
 I also split my data into a 70-30 training-validation split.
 
 It took me quite a bit of time to play around with these various ideas and I went through multiple permutations to get the right combination and better accuracy.
+
+![alt text][image3]
+![alt text][image4]
