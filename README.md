@@ -82,5 +82,17 @@ I also split my data into a 70-30 training-validation split.
 
 It took me quite a bit of time to play around with these various ideas and I went through multiple permutations to get the right combination and better accuracy.
 
-![alt text][image3]
 ![alt text][image4]
+![alt text][image5]
+
+### Further improvements and trials
+1. This project for me is far from over. I started collecting a lot of data from track2 and would love to generalize the model to dirve that track as well. I would also like to see what it takes to really generalize this model to any track of this type.
+2. I also wanted to explore VGG architecture and see what difference would that make if any.
+3. I would also like to explore the best way to deal with zero angles and side cameras.
+4. There is plenty to research in this space and it would be interesting to see what are the real methods used in practice on a real car. I've only come across NVIDIA's paper for this, but would love to explore more.
+
+### Additional resources:
+Additional resources I used on this project - or should I say journey :-)
+1. https://discussions.udacity.com/t/help-stuck-just-cant-get-a-full-lap-on-the-track/240144/16
+2. https://medium.com/@mohankarthik/cloning-a-car-to-mimic-human-driving-5c2f7e8d8aff
+3. https://chatbotslife.com/using-augmentation-to-mimic-human-driving-496b569760a9
