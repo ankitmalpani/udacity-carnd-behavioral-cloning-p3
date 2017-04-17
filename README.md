@@ -81,6 +81,7 @@ After some suggestions from mentors on the forums. I took the augmentation and r
 I also split my data into a 70-30 training-validation split.
 
 It took me quite a bit of time to play around with these various ideas and I went through multiple permutations to get the right combination and better accuracy.
+Some images post augmentation and processing (ex: random brightness application)
 
 ![alt text][image4]
 ![alt text][image5]
